@@ -40,7 +40,7 @@ _Simple Color_ also supports various options to customize the color picker:
 $('.simple_color').simpleColor({
     cellWidth: 9,
     cellHeight: 9,
-    callback: function(hex, element) {
+    onSelect: function(hex, element) { // see other callback options below
         alert("color picked! " + hex + " for input #" + element.attr('class'));
     }
 });
